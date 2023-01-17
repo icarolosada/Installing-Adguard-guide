@@ -1,0 +1,17 @@
+Download and install Raspbian on your Raspberry Pi. You can download Raspbian from the official Raspberry Pi website (https://www.raspberrypi.org/downloads/raspbian/) and install it using a tool like Raspberry Pi Imager.
+Connect your Raspberry Pi to a local network with Internet access. This can be done by connecting an Ethernet cable to your router or by connecting to a Wi-Fi network using the built-in wireless capabilities of the Raspberry Pi.
+
+Open a terminal on your Raspberry Pi and enter the following command to download and install AdGuardHome:
+
+Following code:
+curl -sSL https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/scripts/install.sh | sudo bash
+
+This command will download the installation script from the AdGuardHome repository on GitHub and run it with administrator privileges.
+
+Once installed, open a web browser on your computer and enter the IP address of your Raspberry Pi followed by the port number, usually it's 8000, for example: 192.168.1.1:8000. This will open the AdGuardHome configuration wizard.
+
+Follow the configuration wizard to set up your local network and content filtering options. This will include configuring your DHCP server settings, setting up a custom DNS server, and choosing which content to block.
+
+Configure your device as the DNS of your router or of each device you want to use Adguard to filter the content. This can be done by going to the settings of your router or device and changing the DNS server to the IP address of your Raspberry Pi.
+
+Once AdGuardHome is set up, you can enjoy a safer and more private browsing experience with less ads and trackers.
